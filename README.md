@@ -1,0 +1,3 @@
+# React 19 useEffect Cleanup Issue: Event Listener Leak
+
+This repository demonstrates a common error in React 19's `useEffect` hook: failing to properly remove event listeners, leading to memory leaks.  The `bug.js` file showcases the error, while `bugSolution.js` provides the corrected version.  The issue arises from an incorrect return function within the `useEffect` hook that doesn't remove the event listener.
